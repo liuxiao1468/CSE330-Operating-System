@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/proj3.dir/thread_test.c.o  -o proj3 
+/usr/bin/cc -g   CMakeFiles/proj3.dir/proj-3.c.o CMakeFiles/proj3.dir/proj_2.c.o CMakeFiles/proj3.dir/thread_test.c.o  -o proj3 

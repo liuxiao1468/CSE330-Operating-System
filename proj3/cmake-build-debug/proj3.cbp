@@ -83,6 +83,12 @@
 		<Unit filename="/home/leo/CSE330/proj3/TCB.h">
 			<Option target="proj3"/>
 		</Unit>
+		<Unit filename="/home/leo/CSE330/proj3/proj-3.c">
+			<Option target="proj3"/>
+		</Unit>
+		<Unit filename="/home/leo/CSE330/proj3/proj_2.c">
+			<Option target="proj3"/>
+		</Unit>
 		<Unit filename="/home/leo/CSE330/proj3/q.h">
 			<Option target="proj3"/>
 		</Unit>

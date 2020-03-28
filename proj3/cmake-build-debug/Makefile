@@ -123,6 +123,60 @@ proj3/fast:
 	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/build
 .PHONY : proj3/fast
 
+proj-3.o: proj-3.c.o
+
+.PHONY : proj-3.o
+
+# target to build an object file
+proj-3.c.o:
+	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/proj-3.c.o
+.PHONY : proj-3.c.o
+
+proj-3.i: proj-3.c.i
+
+.PHONY : proj-3.i
+
+# target to preprocess a source file
+proj-3.c.i:
+	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/proj-3.c.i
+.PHONY : proj-3.c.i
+
+proj-3.s: proj-3.c.s
+
+.PHONY : proj-3.s
+
+# target to generate assembly for a file
+proj-3.c.s:
+	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/proj-3.c.s
+.PHONY : proj-3.c.s
+
+proj_2.o: proj_2.c.o
+
+.PHONY : proj_2.o
+
+# target to build an object file
+proj_2.c.o:
+	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/proj_2.c.o
+.PHONY : proj_2.c.o
+
+proj_2.i: proj_2.c.i
+
+.PHONY : proj_2.i
+
+# target to preprocess a source file
+proj_2.c.i:
+	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/proj_2.c.i
+.PHONY : proj_2.c.i
+
+proj_2.s: proj_2.c.s
+
+.PHONY : proj_2.s
+
+# target to generate assembly for a file
+proj_2.c.s:
+	$(MAKE) -f CMakeFiles/proj3.dir/build.make CMakeFiles/proj3.dir/proj_2.c.s
+.PHONY : proj_2.c.s
+
 thread_test.o: thread_test.c.o
 
 .PHONY : thread_test.o
@@ -159,6 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... proj3"
 	@echo "... edit_cache"
+	@echo "... proj-3.o"
+	@echo "... proj-3.i"
+	@echo "... proj-3.s"
+	@echo "... proj_2.o"
+	@echo "... proj_2.i"
+	@echo "... proj_2.s"
 	@echo "... thread_test.o"
 	@echo "... thread_test.i"
 	@echo "... thread_test.s"

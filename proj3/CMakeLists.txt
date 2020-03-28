@@ -6,6 +6,8 @@ set(CMAKE_C_STANDARD 11)
 include_directories(.)
 
 add_executable(proj3
+        proj-3.c
+        proj_2.c
         q.h
         sem.h
         TCB.h

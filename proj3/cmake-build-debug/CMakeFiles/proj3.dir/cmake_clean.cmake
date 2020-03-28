@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/proj3.dir/proj-3.c.o"
+  "CMakeFiles/proj3.dir/proj_2.c.o"
   "CMakeFiles/proj3.dir/thread_test.c.o"
   "proj3.pdb"
   "proj3"

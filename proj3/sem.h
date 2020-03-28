@@ -4,31 +4,36 @@
 
 #include <stdio.h>
 #include <unistd.h>
+#include <string.h>
 
 struct semaphore{
     int count;
     struct TCB_t * Q;
 };
 
-void init_sem(struct semaphore * semaphore, int value){
-    semaphore->count = value;
-    semaphore->Q = InitQueue();
+struct semaphore * init_sem(int value){
+    struct semaphore * s = (struct semaphore *)malloc(1*sizeof(struct semaphore));
+    s->count = value;
+    s->Q = InitQueue();
+    return s;
 }
 
 void P(struct semaphore * semaphore){
+    struct TCB_t * temp;
     semaphore->count--;
     if (semaphore->count<0){
-        struct TCB_t * temp;
+
         temp = DelQueue(runQ);
-        AddQueue(semaphore->Q, runQ);
-        swapcontext(&(temp->context),&(runQ->context));
+        AddQueue(semaphore->Q, temp);
+        struct TCB_t * Curr_Thread=runQ->next;
+        swapcontext(&(temp->context),&(Curr_Thread->context));
     }
 }
 
 void v(struct semaphore * semaphore){
+    struct TCB_t * temp;
     semaphore->count++;
     if (semaphore->count<=0){
-        struct TCB_t * temp;
         temp = DelQueue(semaphore->Q);
         AddQueue(runQ,temp);
     }

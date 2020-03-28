@@ -7,18 +7,7 @@
 
 #include "TCB.h"
 
-/*struct item
-{
-    int payload;
-    struct item * next = NULL;
-    struct item * prev = NULL;
-};*/
 
-/*struct item * NewItem(){
-    struct item * p = new item;
-    p->payload = 1;
-    return p;
-}*/
 struct TCB_t * runQ;
 
 struct TCB_t * InitQueue(){
